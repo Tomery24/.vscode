@@ -1,0 +1,100 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, sans-serifns-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;  /* Aligns items vertically */
+    gap: 20px;  /* Space between the image and text */
+    padding: 20px;
+    background: #333;
+    color: white;
+    justify-content: center;
+}
+
+/* Profile Image Styling */
+header picture img {
+    width: 150px;  /* Adjust size */
+    height: 150px;
+    border-radius: 40%;  /* Circular image */
+    object-fit: cover;
+}
+
+/* Wrap h1 and nav in a flex column */
+header h1, header nav {
+    display: block;
+}
+
+/* Styling for nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+header.dark-mode {
+    background-color: #444;
+}
+
+nav ul li a.active {
+    color: #ffcc00;  /* Highlight the active link */
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#dark-mode-btn:hover {
+    background: #0056b3;
+}

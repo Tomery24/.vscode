@@ -1,0 +1,50 @@
+/* Set global font to Tahoma */
+body {
+    font-family: 'Tahoma', sans-serif; /* Use Tahoma as the default font */
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Styling the header */
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Styling the History Section */
+#history-events {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#history-events h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#history-events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-events ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#history-events ul li:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}

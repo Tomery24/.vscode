@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    background: #f0e5b4fb;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #9ca8dd;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* Timer Display */
+#timer-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Progress Bar */
+#progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background: #007bff;
+    transition: width 1s linear;
+}
+
+/* Flash Animation */
+@keyframes flash {
+    0% { background-color: red; }
+    50% { background-color: green; }
+    100% { background-color: blue; }
+}
+
+.flash {
+    animation: flash 0.3s infinite alternate;
+}
